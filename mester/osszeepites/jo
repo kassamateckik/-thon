@@ -1,0 +1,17 @@
+n = int(input())
+megold = 301
+van = False
+vonatok = []
+for i in range(n):
+    be = int(input())
+    vonatok.append(be)
+    if be > 120 and be < megold:
+        van = True
+        megold = be
+if van:
+    i = 0
+    while i < n and not(vonatok[i] == megold): 
+        i += 1
+    print(i+1, megold)
+else: 
+    print("-1")
