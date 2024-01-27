@@ -13,7 +13,7 @@ osszfel = 0
 for i in range(n):
     osszfel += fel[i]
 
-if osszfel*ar > koltseg:
+if osszfel*ar > koltseg * n:
     print("1")
 else:
     print("0")
