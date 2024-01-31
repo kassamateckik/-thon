@@ -1,0 +1,9 @@
+2. feladat: 3.048
+3. feladat: 2
+4. feladat: Peter
+5. feladat: Erzsi
+6. feladat: 5 Nora Bela Reka Geza Anna
+7. feladat: Van
+8. feladat: Oliver
+9. feladat: 38.1%
+10. feladat: 4 6 8 11 14 17
