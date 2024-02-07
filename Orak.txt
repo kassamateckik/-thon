@@ -1,0 +1,36 @@
+Programozás(Asztali alkalmazások fejlesztése, tesztelése)[Python, C#, Xamarin?(Mobil)]:
+	11, 12 -- 4 óra
+	13 -- 7 óra
+Tananyag:
+11 -- Konzol
+12 -- Ablak alkalmazások
+13 -- Asztal és mobil alkalmazások, adatbázissal való kommunikálás
+
+
+Webprogramozás, -fejlesztés[PhP?(szever oldal, Backend), JS(kliens oldal, Frontend), React?, AJAX(nem egy nyelv, Php és a JS tudjon egymással beszélni)]:
+	11, 12 -- 3 óra
+	13 -- 7 óra Frontend, 6 óra Backend
+Tananyag:
+11 -- CSS, Bootstap(saját magunk által megcsinálva), Webprogramozás(javascript)
+12 -- Osztályok, AJAX
+13 -- Ketté ágazik: Frontend(javascript, framework-ök(pl: Bootstrap pythonhoz))
+					Backend(PhP, szerveroldal, keretrendszer) --> REST API elkészítése(kliesn(frontend) megszólítja a szervert(backend-et), ami megszólítja az adatbázist, oda-vissza)
+
+
+Adatbázis-kezelésI.,II.(Hardcore Excel)[MySQL]:
+	11 -- 2 óra
+	13 -- 2 óra
+Tananyag:
+11 -- Lekérdezések, elmélet
+13 -- Tranzakciókezelés, felhasználók és jogosultságok kezelése
+
+
+MINDEN TANTÁRGY MINDENNEN ÖSSZEFÜGG!!!
+
+
+IKT -- 11, 12 -- 3 óra
+13 -- Vizsgaremek öszehozása csapatban januártól
+
+12 -- Szoftvertesztrelés(projektben dolgozás alapos teszteléssel) -- 2 óra
+
++ Szakmai angol 2-2-2
