@@ -7,7 +7,6 @@ alatta: 8000
 '''
 
 def osztondij(a):
-    dij = 0
     if a >= 4.5:
         dij = 60000
     elif a >= 4:
