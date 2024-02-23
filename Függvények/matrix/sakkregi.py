@@ -1,4 +1,4 @@
-sor = int(input("Sorok száma: "))
+ sor = int(input("Sorok száma: "))
 oszlop = int(input("Oszlopok száma: "))
 
 for i in range(sor):
