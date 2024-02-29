@@ -42,9 +42,12 @@ def main():
     a = [2, 7, 1, 5, 3]
     b = [1, 6, 8, 7]
 
-    print(metszet(a, b))
-    print(unio(a, b))
-    print(kulonbseg(a, b))
-    print(szimdiff(a, b))
-    print(szimdiff2(a, b))
+    print("A metszet B:",metszet(a, b))
+    print("B metszet A:",metszet(b, a))
+    print("A U B:",unio(a, b))
+    print("B U A:",unio(b, a))
+    print("A \ B:",kulonbseg(a, b))
+    print("B \ A:",kulonbseg(b, a))
+    print("A delta B:",szimdiff(a, b))
+    print("B delta A:",szimdiff2(b, a))
 main()
