@@ -23,7 +23,7 @@ def betuk(s: str):
     lyukas = ""
     for i in range(len(s)):
         r = randint(1, 5)
-        if r == 3:
+        if r == 3 and s[i] != " ":
             lyukas += "_"
         else:
             lyukas += s[i]
