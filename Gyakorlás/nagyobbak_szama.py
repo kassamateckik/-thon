@@ -9,6 +9,13 @@ Visszatérési érték:
 Hány darab k-nál nagyobb szám van a listában?
 Ha k értékét nem adjuk meg, akkor a pozitív számok számával tér vissza.
 '''
+def nagyobbak_szama(szamok, k=0):
+    db = 0
+    for i in range(len(szamok)):
+        if szamok[i] > k:
+            db += 1
+    return db
+
 
 def main():
     print(nagyobbak_szama([4, -1, 0, 7, 5], 4) == 2)
