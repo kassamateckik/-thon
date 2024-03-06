@@ -6,17 +6,31 @@ def sorsolas():
     neo = szavak[randrange(len(szavak))]
     return neo
 
-def vonalak_kirajzol(s: str):
+def kirajzol(s):
     print("Feladvány:")
     for i in range(len(s)):
-        print("_", end=" ")
+        print(s[i], end=" ")
     print()
+
+def kezdeti_allapot(n):
+    eredmeny = []
+    for i in range(n):
+        eredmeny.append("_")
+    return eredmeny
+
+def csere(betu, aktualis, megoldas):
+    for i in range(len(megoldas)):
+        if betu == megoldas[i]:
+            aktualis[i] = betu
+
 
 def main():
     system("cls")
     megoldas = sorsolas()
+    aktualis = kezdeti_allapot(len(megoldas))
     print(megoldas)
-    vonalak_kirajzol(megoldas)
-    
+    kirajzol(aktualis)
+    betu = input("\nBetű: ")
+    csere(betu, aktualis, megoldas)
     
 main()
