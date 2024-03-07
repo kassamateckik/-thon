@@ -30,22 +30,35 @@ def benne(a, lista):
         i += 1
     return i < len(lista)    
 
-def fordulo(aktualis, megoldas, hibak):
-    betu = input("\nBetű: ")
-    if len(betu) != 1:
-        return
-    if not benne(betu, megoldas) and not benne(betu, hibak):
-        hibak.append(betu)
+def megoldottuk(aktualis, megoldas):
+    for i in range(len(megoldas)):
+        aktualis[i] = megoldas[i]
+
+def kiiras(betu, aktualis, megoldas, hibak):
     system("cls")
     csere(betu, aktualis, megoldas)
     kirajzol(aktualis)
     print(f"Hibák: {hibak}")
+
+
+def fordulo(aktualis, megoldas, hibak):
+    betu = input("\nBetű: ")
+    if betu == megoldas:
+        megoldottuk(aktualis, megoldas)
+        kiiras(betu, aktualis, megoldas, hibak)
+        return
+    if len(betu) != 1:
+        kiiras(betu, aktualis, megoldas, hibak)
+        return
+    if not benne(betu, megoldas) and not benne(betu, hibak):
+        hibak.append(betu)
+    kiiras(betu, aktualis, megoldas, hibak)
         
-def vege(hibak):
+def vege(hibak, megoldas):
     if len(hibak) <= 2:
         print("Nyertél!")
     else:
-        print("Vesztettél!")
+        print("Vesztettél!, Megoldás:", megoldas)
 
 def jatek(megoldas):
     aktualis = kezdeti_allapot(len(megoldas))
@@ -53,13 +66,12 @@ def jatek(megoldas):
     hibak = []
     while benne("_", aktualis) and len(hibak) < 3:  # aktualis != list(megoldas)
         fordulo(aktualis, megoldas, hibak)
-    vege(hibak)
+    vege(hibak, megoldas)
 
 
 def main():
     system("cls")
     megoldas = sorsolas()
-    print(megoldas) # magunknak csalunk
     jatek(megoldas)
     
 main()
