@@ -9,8 +9,21 @@ x: szövegeket tartalmazó lista
 Visszatérési érték:
 Egy lista a megfelelő (egyedi) elemekkel!
 '''
+def benne(a, lista):
+    i = 0
+    while i < len(lista) and a != lista[i]:
+        i += 1
+    return i < len(lista)
+
+
 def egyedi_hosszuak(x): # Bennevan függvény 
-    
+    egyediek= []
+    hosszak = []
+    for i in range(len(x)):
+        if not benne(len(x[i]), hosszak):
+            egyediek.append(x[i])
+            hosszak.append(len(x[i]))
+    return egyediek
 
 
 def main():
