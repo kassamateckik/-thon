@@ -1,6 +1,5 @@
 from random import randrange
 from os import system
-from tkinter import N
 
 def sorsolas():
     szavak = ["hálózat", "python", "számítógép", "értelmes", "szavak", "dolgozat"]
