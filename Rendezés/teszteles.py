@@ -37,8 +37,21 @@ def rendez(x):
         j = minindex(x, i)
         csere(x, i, j)
 
+def feltolt_nagyabolrendezett(n):
+    x = []
+    x.append(randint(1, 9))
+    for i in range(n):
+        elozo = x[i]
+        r = randint(1, 10)
+        if r <= 8:
+            x.append(elozo + 1)
+        else:
+            x.append(elozo - 1)
+    return x
+
+
 def teszt(n):
-    x = feltolt(n)
+    x = feltolt_nagyabolrendezett(n)
     print("Lista")
 
     y = x.copy()
