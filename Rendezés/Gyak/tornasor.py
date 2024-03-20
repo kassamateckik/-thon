@@ -10,16 +10,22 @@ def minindex(x, n=0):
             mini = i
     return mini
 
-def rendez(x):
+def rendez1(x):
     for i in range(len(x)):
         j = minindex(x, i)
         csere(x, i, j)
 
-def rendez2(x, y):
-    for i in range(len(x)):
-        j = minindex(x, i)
-        csere(x, i, j)
-        csere(y, i, j)
+def rendez(x, y = ""):
+    if y != "":
+        for i in range(len(x)):
+            j = minindex(x, i)
+            csere(x, i, j)
+            csere(y, i, j)
+    else:
+        for i in range(len(x)):
+            j = minindex(x, i)
+            csere(x, i, j)
+
 
 def main():
     nevek = ["Robi", "Laci", "Anna",  "Dani", "Ricsi", "Marci"]
@@ -35,13 +41,10 @@ def main():
 
     # F2 - Adjuk meg a tornasort (nevek)!
     # (Magasság szerinti növekvő sorrend.)
-    rendez2(magassagok, nevek)
+    rendez(magassagok, nevek)
     print("2. Tornasor:")
     print("   Nevek:", nevek)
     print("   Magasságok:", magassagok)
-
-
-
 
     # F3 - Egyetlen rendezési függvényt használjunk!
 
