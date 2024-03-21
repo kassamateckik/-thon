@@ -1,0 +1,5 @@
+piros
+fekete
+lila
+zöld
+barna
