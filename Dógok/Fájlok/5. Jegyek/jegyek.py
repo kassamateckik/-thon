@@ -4,8 +4,8 @@ def osztalyozas():
     fw = open("naplo.txt", "w", encoding="UTF-8")
     for i in range(16):
         jegy = randint(1, 5)
-        sor = str(jegy) + "\n"
-        fw.write(sor)
+        # fw.write(str(jegy) + "\n")
+        fw.write(f"{jegy}\n")
     fw.close()
 
 def main():
