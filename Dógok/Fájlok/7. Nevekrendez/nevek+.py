@@ -25,14 +25,14 @@ def kifile(n, k, fw):
 
 def main():
     nevek, korok = [], []
-    f = open("nevek+.txt", "r+", encoding="UTF-8")
-    print(f.tell()) # hányadik bájtnál járok a fájlban?
-    befile(nevek, korok, f)
-    print(f.tell())
+    f = open("nevek+.txt", "a+", encoding="UTF-8")
+    # a+ esetén az olvasási pozíciót lehet változtetni, az írásit nem!(mindig a végére ír)
     f.seek(0)
+    # print(f.tell()) hányadik bájtnál járok a fájlban?
+    befile(nevek, korok, f)
     rendez(nevek, korok)
+    f.truncate(0)
     kifile(nevek, korok, f)
-    print(f.tell())
     f.close()
 
 
