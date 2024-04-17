@@ -26,10 +26,31 @@ def ujversenyzo(n, p, m):
     n.append("Aloe Vera")
     p.append(randint(0, m))
 
+def ln(p, i):
+    maxi = i
+    for j in range(i+1, len(p)):
+        if p[j] > p[maxi]:
+            maxi = j
+    return maxi
+
+def rendez(n, p):
+    for i in range(len(p)):
+        maxi = ln(p, i)
+        p[i], p[maxi] = p[maxi], p[i]
+        n[i], n[maxi] = n[maxi], n[i]
+
+def kiir(n, p):
+    fw = open("eredmeny.txt", "w", encoding="UTF-8")
+    fw.write("Eredmenyek:\n")
+    for i in range(len(n)):
+        fw.write(f"{n[i]} - {p[i]}\n")
+    fw.close()
 
 def main():
     nev, pont = [], []
     maxpont = befajl(nev, pont)
     futtatas()
     ujversenyzo(nev, pont, maxpont)
+    rendez(nev, pont)
+    kiir(nev, pont)
 main()
