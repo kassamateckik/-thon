@@ -44,6 +44,7 @@ def kiir(n, p):
     fw.write("Eredmenyek:\n")
     for i in range(len(n)):
         fw.write(f"{n[i]} - {p[i]}\n")
+    fw.write(f"(\_/)\n(•.•)\n/>♥")
     fw.close()
 
 def main():
